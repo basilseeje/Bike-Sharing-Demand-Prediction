@@ -1,5 +1,4 @@
-# Bike-Sharing-Demand-Prediction
-Mini project on bike sharing demand prediction using machine learning
+
 # 🚲 Bike Sharing Demand Prediction – Mini Project
 
 This project analyzes the Bike Sharing Dataset (UCI Machine Learning Repository) and builds machine learning models to predict hourly bike rental demand.
