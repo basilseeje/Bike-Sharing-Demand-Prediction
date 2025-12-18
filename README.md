@@ -1,50 +1,48 @@
 
-# 🚲 Bike Sharing Demand Prediction – Mini Project
+# Bike Sharing Demand Prediction 🚲
 
-This project analyzes the Bike Sharing Dataset (UCI Machine Learning Repository) and builds machine learning models to predict hourly bike rental demand.
+## Project Overview
+This project implements an end-to-end machine learning solution to predict hourly bike rental demand using the Bike Sharing Dataset. The goal is to analyze historical rental patterns and build a predictive model that can estimate the number of bikes rented per hour based on environmental and temporal features.
 
-## 📌 Project Objectives
-- Perform Exploratory Data Analysis (EDA)
-- Understand factors influencing bike rentals
-- Build Linear Regression and Random Forest models
-- Evaluate model performance
-- Interpret feature importance
-- Predict bike rental count (`cnt`)
+## Dataset
+- **Source:** UCI Machine Learning Repository  
+- **Dataset Used:** hour.csv  
+- **Number of Rows:** 17,379  
+- **Target Variable:** `cnt` (total number of bike rentals per hour)  
+- **Problem Type:** Supervised Learning – Regression  
 
-## 📂 Dataset Used
-- **hour.csv** from UCI Bike Sharing Dataset  
-- Contains 17,379 rows and 17 columns
+## Project Workflow
+1. Data loading and understanding  
+2. Exploratory Data Analysis (EDA)  
+3. Feature selection and preprocessing  
+4. Model building using:
+   - Linear Regression
+   - Random Forest Regression
+5. Model evaluation using:
+   - Mean Squared Error (MSE)
+   - R² Score
+6. Model saving for deployment  
+7. Deployment using Flask web application  
 
-## 🔍 EDA Performed
-- Histogram of bike rentals
-- Rentals by hour of day
-- Correlation heatmap
-- Trend and seasonal patterns
+## Model Performance
+- **Linear Regression:** R² ≈ 0.38  
+- **Random Forest Regression:** R² ≈ 0.94  
 
-## ⚙️ Preprocessing
-- Removed unnecessary columns: `instant`, `dteday`, `casual`, `registered`
-- Defined features (X) and target variable (`cnt`)
-- Train-test split (80–20)
+The Random Forest model significantly outperformed Linear Regression, indicating its ability to capture non-linear relationships in the data.
 
-## 🤖 Models Built
-### 1. Linear Regression (baseline)
-- R² Score: ~0.38  
-- MSE: High  
-- Limited performance due to non-linearity
+## Model Deployment
+The trained Random Forest model was saved using `pickle`/`joblib` and deployed locally as a Flask web application. A simple HTML interface allows users to input feature values such as hour, temperature, humidity, and windspeed to receive real-time predictions of bike rental demand.
 
-### 2. Random Forest Regression (improved model)
-- R² Score: **0.94**
-- MSE: **Very low**
-- Accurate predictions
+### Model File Note
+Due to GitHub file size limitations, the trained model file (`model.pkl`) is not uploaded to this repository.  
+However, the Jupyter Notebook contains the complete code for training and saving the model, and the Flask application loads the locally saved model for deployment.
 
-## 📈 Key Visualizations
-- Feature importance plot  
-- Actual vs Predicted graph  
-- Hourly rental trend  
+## How to Run the Application
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
 
-## 📝 Conclusion
-Random Forest performed extremely well, capturing non-linear patterns and achieving an R² of 0.94.  
-Hour of the day, temperature, and humidity were the most important features.  
 The model can accurately forecast hourly bike rental demand.
 
 ## 👤 Author
