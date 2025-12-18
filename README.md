@@ -45,3 +45,13 @@ However, the Jupyter Notebook contains the complete code for training and saving
 python app.py
 ## Open the application in your browser
 http://127.0.0.1:5000/
+## Conclusion
+This project successfully demonstrates an end-to-end machine learning workflow for predicting hourly bike rental demand. The dataset was analyzed using exploratory data analysis, relevant features were selected, and multiple regression models were built and evaluated.
+
+Among the models tested, Random Forest Regression achieved the best performance, effectively capturing non-linear patterns in the data. The trained model was saved for deployment and integrated into a Flask-based web application, enabling real-time prediction through a user interface.
+
+Overall, this project highlights the complete process of data analysis, model development, evaluation, and local deployment, making it suitable for practical demand forecasting and decision-making scenarios.
+
+## 👤 Author
+**Basil Seeje**  
+Mini Project
