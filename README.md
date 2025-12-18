@@ -1,4 +1,3 @@
-
 # Bike Sharing Demand Prediction 🚲
 
 ## Project Overview
@@ -38,13 +37,14 @@ Due to GitHub file size limitations, the trained model file (`model.pkl`) is not
 However, the Jupyter Notebook contains the complete code for training and saving the model, and the Flask application loads the locally saved model for deployment.
 
 ## How to Run the Application
-1. Clone the repository
+1. Clone the repository  
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
 
-The model can accurately forecast hourly bike rental demand.
-
+python app.py
+http://127.0.0.1:5000/
+## Conclusion
+This project demonstrates the complete machine learning lifecycle, from data exploration and model development to evaluation and deployment. The Random Forest model showed strong predictive performance and was successfully deployed as a Flask web application for real-time bike rental demand prediction.
 ## 👤 Author
-- BASIL SEEJE
-- Mini Project 
+BasilSeeje
