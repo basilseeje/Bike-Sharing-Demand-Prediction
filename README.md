@@ -41,3 +41,7 @@ However, the Jupyter Notebook contains the complete code for training and saving
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+## Run the Flask App
+python app.py
+## Open the application in your browser
+http://127.0.0.1:5000/
