@@ -41,10 +41,3 @@ However, the Jupyter Notebook contains the complete code for training and saving
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-
-Run the Flask app:'python app.py'
-Open the application in your browser:http://127.0.0.1:5000/
-## Conclusion
-This project demonstrates the complete machine learning lifecycle, from data exploration and model development to evaluation and deployment. The Random Forest model showed strong predictive performance and was successfully deployed as a Flask web application for real-time bike rental demand prediction.
-## 👤 Author
-BasilSeeje
